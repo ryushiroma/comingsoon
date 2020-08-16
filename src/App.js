@@ -1,8 +1,9 @@
 import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import logo from './logo.png';
 import './App.css';
 
-function App() {
+function ComingSoon() {
   return (
     <div className="App">
       <header className="App-header">
@@ -31,6 +32,14 @@ function App() {
       </header>
     </div>
   );
+}
+
+function App() {
+  return (
+    <Router>
+      <Route path="/" component={ComingSoon} />
+    </Router>
+  )
 }
 
 export default App;
