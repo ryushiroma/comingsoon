@@ -12,12 +12,22 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="https://api.whatsapp.com/send?phone=5511974766401&text=Ola%20shyros" //whatsapp da loja com botaozinho
+          href="https://api.whatsapp.com/send?phone=5511974766401" //whatsapp da loja com botaozinho
           target="_blank"
           rel="noopener noreferrer"
         >
-          Entre em contato pelo whatsapp (11)97476-6401
+          Entre em contato pelo whatsapp (Matriz)
         </a>
+
+        <a
+          className="App-link"
+          href="https://api.whatsapp.com/send?phone=5511940461865" //whatsapp da loja com botaozinho
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Entre em contato pelo whatsapp (Filial)
+        </a>
+
       </header>
     </div>
   );
