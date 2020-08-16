@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Redirect, Route } from 'react-router-dom';
 import logo from './logo.png';
 import './App.css';
 
@@ -32,12 +32,15 @@ function ComingSoon() {
       </header>
     </div>
   );
-}
+} 
+
+const RedirectComponent = () => (<Redirect to="/"/>)
 
 function App() {
   return (
     <Router>
       <Route path="/" component={ComingSoon} />
+      <Route path="*" component={RedirectComponent} />
     </Router>
   )
 }
