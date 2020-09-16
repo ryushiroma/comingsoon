@@ -5,34 +5,20 @@ import './App.css';
 
 function ComingSoon() {
   return (
-    <div className="App">
+    <div>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
+        <a className="texto" href="https://shyrosjeans.com.br/">
           Redirecionando para página principal
-        </p>
-
-        <Route exact path="/" render={() => (window.location = "https://shyrosjeans.com.br/")} />
+        </a>
         
+         <Route exact path="/" render={() => (window.location = "https://shyrosjeans.com.br/")} />
+
       </header>
     </div>
   );
 } 
 
-// import React from 'react';
-// import { BrowserRouter as Router, Redirect, Route } from 'react-router-dom';
-// import './App.css';
-
-// function ComingSoon() {
-//   return (
-//     <div className="App">
-//       <p className="p">Redirecionando para página principal </p>
-//       <div className="link">
-//           <Route exact path="/" render={() => (window.location = "https://shyrosjeans.com.br/")} />
-//       </div>
-//     </div>
-//   );
-// } 
 
 const RedirectComponent = () => (<Redirect to="/"/>)
 
